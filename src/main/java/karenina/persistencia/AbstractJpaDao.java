@@ -1,12 +1,11 @@
 package karenina.persistencia;
 
-import java.io.Serializable;
 import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-public abstract class AbstractJpaDao<T extends Serializable> implements IGenericDao<T> {
+public abstract class AbstractJpaDao <T extends Entity>  implements IGenericDao<T> {
 
 	private Class<T> clazz;
 

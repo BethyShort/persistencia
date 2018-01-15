@@ -1,9 +1,6 @@
 package karenina.persistencia;
 
-import java.io.Serializable;
-
-public class Foo implements Serializable{
-
+public class Estudiante implements Entity{
 	/**
 	 * 
 	 */
