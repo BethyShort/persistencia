@@ -1,16 +1,16 @@
-package ip2.cva.layer.app.resources.data;
+package ip2.cva.layer.app.resources.data.generico;
 
-import ip2.cva.layer.app.resources.data.interfaces.IEntity;
-import ip2.cva.layer.app.resources.data.interfaces.IEntityBody;
-import ip2.cva.layer.app.resources.data.interfaces.IEntityPk;
+import ip2.cva.layer.app.resources.data.interfaces.IEntidad;
+import ip2.cva.layer.app.resources.data.interfaces.IEntidadCuerpo;
+import ip2.cva.layer.app.resources.data.interfaces.IEntidadPk;
 
-public abstract class AEntity <J extends IEntityPk, K extends IEntityBody> implements IEntity<J,K>{
+public abstract class AEntidadGenerica <J extends IEntidadPk, K extends IEntidadCuerpo> implements IEntidad<J,K>{
 
 	private static final long serialVersionUID = 1L;	
 	private J clave;
 	private K cuerpo;
 	
-	public AEntity(J entityPk, K entityBody) {
+	public AEntidadGenerica(J entityPk, K entityBody) {
 		clave=entityPk;
 		cuerpo=entityBody;
 	}

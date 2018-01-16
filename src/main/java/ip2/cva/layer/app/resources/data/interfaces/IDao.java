@@ -2,11 +2,11 @@ package ip2.cva.layer.app.resources.data.interfaces;
 
 import java.util.List;
 
-public interface IGenericDao <J extends IEntityPk, K extends IEntityBody, T extends IEntity<J,K>>  {
+public interface IDao <J extends IEntidadPk, K extends IEntidadCuerpo, T extends IEntidad<J,K>>  {
 
 	void setClazz(Class<T> clazzToSet); 
 	
-	T find(final Long id);
+	T findByPk(final J pk);
 
 	List<T> findAll();
 
@@ -16,5 +16,5 @@ public interface IGenericDao <J extends IEntityPk, K extends IEntityBody, T exte
 
 	void delete(final T entity);
 
-	void deleteById(final Long entityId);
+	void deleteByPk(final J pk);
 }

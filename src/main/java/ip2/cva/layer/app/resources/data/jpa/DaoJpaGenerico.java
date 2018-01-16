@@ -2,11 +2,11 @@ package ip2.cva.layer.app.resources.data.jpa;
 
 import org.springframework.stereotype.Repository;
 
-import ip2.cva.layer.app.resources.data.interfaces.IEntity;
-import ip2.cva.layer.app.resources.data.interfaces.IEntityBody;
-import ip2.cva.layer.app.resources.data.interfaces.IEntityPk;
+import ip2.cva.layer.app.resources.data.interfaces.IEntidad;
+import ip2.cva.layer.app.resources.data.interfaces.IEntidadCuerpo;
+import ip2.cva.layer.app.resources.data.interfaces.IEntidadPk;
 
 @Repository
-public class GenericJpaDao <J extends IEntityPk, K extends IEntityBody,T extends IEntity<J,K>> extends AJpaDao<J,K,T>{
+public class DaoJpaGenerico <J extends IEntidadPk, K extends IEntidadCuerpo,T extends IEntidad<J,K>> extends ADaoJpa<J,K,T>{
 	
 }

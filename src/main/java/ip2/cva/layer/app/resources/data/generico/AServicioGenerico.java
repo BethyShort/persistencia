@@ -1,16 +1,16 @@
-package ip2.cva.layer.app.resources.data;
+package ip2.cva.layer.app.resources.data.generico;
 
-import ip2.cva.layer.app.resources.data.interfaces.IEntity;
-import ip2.cva.layer.app.resources.data.interfaces.IEntityBody;
-import ip2.cva.layer.app.resources.data.interfaces.IEntityPk;
-import ip2.cva.layer.app.resources.data.interfaces.IGenericDao;
-import ip2.cva.layer.app.resources.data.interfaces.IService;
+import ip2.cva.layer.app.resources.data.interfaces.IEntidad;
+import ip2.cva.layer.app.resources.data.interfaces.IEntidadCuerpo;
+import ip2.cva.layer.app.resources.data.interfaces.IEntidadPk;
+import ip2.cva.layer.app.resources.data.interfaces.IDao;
+import ip2.cva.layer.app.resources.data.interfaces.IServicio;
 
-public abstract class GenericService <J extends IEntityPk, K extends IEntityBody, T extends IEntity<J,K>> implements IService <J,K,T>{
+public abstract class AServicioGenerico <J extends IEntidadPk, K extends IEntidadCuerpo, L extends IEntidad<J,K>, M extends IDao<J,K,L>> implements IServicio <J,K,L,M>{
  
-	private IGenericDao<J,K,T> dao;
+	private IDao<J,K,L> dao;
 	
-	public GenericService(IGenericDao<J,K,T> value) {
+	public AServicioGenerico(IDao<J,K,L> value) {
 		dao=value;
 	}
 	

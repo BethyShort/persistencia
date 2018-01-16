@@ -1,7 +1,7 @@
 package ip2.cva.layer.app.resources.data;
 
-import ip2.cva.layer.app.resources.data.interfaces.IEntityBody;
+import ip2.cva.layer.app.resources.data.interfaces.IEntidadCuerpo;
 
-public class EstudianteBody implements IEntityBody {
+public class EstudianteCuerpo implements IEntidadCuerpo {
 
 }

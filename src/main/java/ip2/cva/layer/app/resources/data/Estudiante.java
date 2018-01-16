@@ -1,8 +1,10 @@
 package ip2.cva.layer.app.resources.data;
 
-public class Estudiante extends AEntity<EstudiantePk, EstudianteBody>{
+import ip2.cva.layer.app.resources.data.generico.AEntidadGenerica;
+
+public class Estudiante extends AEntidadGenerica<EstudiantePk, EstudianteCuerpo>{
 	
-	public Estudiante(EstudiantePk pk, EstudianteBody body) {
+	public Estudiante(EstudiantePk pk, EstudianteCuerpo body) {
 		super(pk,body);
 	}
 
