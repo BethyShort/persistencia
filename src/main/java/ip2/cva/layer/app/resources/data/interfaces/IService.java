@@ -1,5 +1,5 @@
-package karenina.persistencia;
+package ip2.cva.layer.app.resources.data.interfaces;
 
-public interface IFooService <T extends Entity>{
+public interface IService <T extends IEntity>{
 
 }

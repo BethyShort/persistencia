@@ -1,30 +1,26 @@
-package karenina.persistencia;
+package ip2.cva.layer.app.resources.data;
 
-public abstract class AbstractEntity <J extends EntityPk, K extends EntityBody> implements Entity{
+import ip2.cva.layer.app.resources.data.interfaces.IEntity;
+import ip2.cva.layer.app.resources.data.interfaces.IEntityBody;
+import ip2.cva.layer.app.resources.data.interfaces.IEntityPk;
+
+public abstract class AEntity <J extends IEntityPk, K extends IEntityBody> implements IEntity<J,K>{
 
 	private static final long serialVersionUID = 1L;	
-	J clave;
-	K cuerpo;
+	private J clave;
+	private K cuerpo;
 	
-	public AbstractEntity(J entityPk, K entityBody) {
+	public AEntity(J entityPk, K entityBody) {
 		clave=entityPk;
 		cuerpo=entityBody;
 	}
 	
-	protected J getClave() {
+	public J getClave() {
 		return clave;
 	}
 
-	protected void setClave(J clave) {
-		this.clave = clave;
-	}
-
-	protected K getCuerpo() {
+	public K getCuerpo() {
 		return cuerpo;
-	}
-
-	protected void setCuerpo(K cuerpo) {
-		this.cuerpo = cuerpo;
 	}
 
 	protected static long getSerialversionuid() {

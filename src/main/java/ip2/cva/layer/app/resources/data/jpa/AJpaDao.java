@@ -1,11 +1,16 @@
-package karenina.persistencia;
+package ip2.cva.layer.app.resources.data.jpa;
 
 import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-public abstract class AbstractJpaDao <T extends Entity>  implements IGenericDao<T> {
+import ip2.cva.layer.app.resources.data.interfaces.IEntity;
+import ip2.cva.layer.app.resources.data.interfaces.IEntityBody;
+import ip2.cva.layer.app.resources.data.interfaces.IEntityPk;
+import ip2.cva.layer.app.resources.data.interfaces.IGenericDao;
+
+public abstract class AJpaDao <J extends IEntityPk, K extends IEntityBody, T extends IEntity<J,K>>  implements IGenericDao<T> {
 
 	private Class<T> clazz;
 

@@ -1,5 +1,5 @@
-package karenina.persistencia;
+package ip2.cva.layer.app.resources.data.interfaces;
 
-public interface EntityBody {
+public interface IEntityBody {
 
 }

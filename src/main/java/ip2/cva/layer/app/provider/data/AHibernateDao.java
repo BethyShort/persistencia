@@ -1,4 +1,9 @@
-package karenina.persistencia;
+package ip2.cva.layer.app.provider.data;
+
+import ip2.cva.layer.app.resources.data.interfaces.IEntity;
+import ip2.cva.layer.app.resources.data.interfaces.IEntityBody;
+import ip2.cva.layer.app.resources.data.interfaces.IEntityPk;
+import ip2.cva.layer.app.resources.data.interfaces.IGenericDao;
 
 /**
  * Se elimina la implemenación original, porque Hibernate es una implementación de JPA y 
@@ -6,4 +11,4 @@ package karenina.persistencia;
  *
  * @param <T>
  */
-public abstract class AbstractHibernateDao <T extends Entity> implements IGenericDao<T>{}
+public abstract class AHibernateDao <J extends IEntityPk, K extends IEntityBody,T extends IEntity<J,K>> implements IGenericDao<T>{}
