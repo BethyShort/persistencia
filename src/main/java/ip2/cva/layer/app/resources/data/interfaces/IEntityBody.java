@@ -1,5 +1,7 @@
 package ip2.cva.layer.app.resources.data.interfaces;
 
-public interface IEntityBody {
+import java.io.Serializable;
+
+public interface IEntityBody extends Serializable {
 
 }

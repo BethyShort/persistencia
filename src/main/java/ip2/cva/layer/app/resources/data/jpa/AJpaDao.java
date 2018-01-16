@@ -10,7 +10,7 @@ import ip2.cva.layer.app.resources.data.interfaces.IEntityBody;
 import ip2.cva.layer.app.resources.data.interfaces.IEntityPk;
 import ip2.cva.layer.app.resources.data.interfaces.IGenericDao;
 
-public abstract class AJpaDao <J extends IEntityPk, K extends IEntityBody, T extends IEntity<J,K>>  implements IGenericDao<T> {
+public abstract class AJpaDao <J extends IEntityPk, K extends IEntityBody, T extends IEntity<J,K>>  implements IGenericDao<J,K,T> {
 
 	private Class<T> clazz;
 

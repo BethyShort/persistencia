@@ -11,4 +11,4 @@ import ip2.cva.layer.app.resources.data.interfaces.IGenericDao;
  *
  * @param <T>
  */
-public abstract class AHibernateDao <J extends IEntityPk, K extends IEntityBody,T extends IEntity<J,K>> implements IGenericDao<T>{}
+public abstract class AHibernateDao <J extends IEntityPk, K extends IEntityBody,T extends IEntity<J,K>> implements IGenericDao<J,K,T>{}

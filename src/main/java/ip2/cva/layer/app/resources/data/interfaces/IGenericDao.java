@@ -2,7 +2,7 @@ package ip2.cva.layer.app.resources.data.interfaces;
 
 import java.util.List;
 
-public interface IGenericDao<T extends IEntity> {
+public interface IGenericDao <J extends IEntityPk, K extends IEntityBody, T extends IEntity<J,K>>  {
 
 	void setClazz(Class<T> clazzToSet); 
 	
