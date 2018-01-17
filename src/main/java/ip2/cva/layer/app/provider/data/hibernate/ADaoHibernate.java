@@ -1,4 +1,4 @@
-package ip2.cva.layer.app.provider.data;
+package ip2.cva.layer.app.provider.data.hibernate;
 
 import java.util.List;
 

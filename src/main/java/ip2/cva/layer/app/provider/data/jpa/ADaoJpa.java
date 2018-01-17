@@ -1,4 +1,4 @@
-package ip2.cva.layer.app.resources.data.jpa;
+package ip2.cva.layer.app.provider.data.jpa;
 
 import java.util.List;
 
