@@ -27,23 +27,23 @@ public abstract class ADaoHibernate<J extends IEntidadPk, K extends IEntidadCuer
 	@Autowired
 	SessionFactory sessionFactory;
 
-	public L findByPk(final J pk) {
+	public final L findByPk(final J pk) {
 		return (L) getCurrentSession().get(clazz, pk);
 	}
 
-	public List<L> findAll() {
+	public final List<L> findAll() {
 		return getCurrentSession().createQuery("from " + clazz.getName()).list();
 	}
 
-	public void create(final L newEntity) {
+	public final void create(final L newEntity) {
 		getCurrentSession().persist(newEntity);
 	}
 
-	public L update(final L persistent) {
+	public final L update(final L persistent) {
 		return (L) getCurrentSession().merge(persistent);
 	}
 
-	public void delete(final L persistent) {
+	public final void delete(final L persistent) {
 		getCurrentSession().delete(persistent);
 	}
 

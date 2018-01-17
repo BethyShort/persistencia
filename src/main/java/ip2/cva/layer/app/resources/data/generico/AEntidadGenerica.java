@@ -15,11 +15,11 @@ public abstract class AEntidadGenerica <J extends IEntidadPk, K extends IEntidad
 		cuerpo=entityBody;
 	}
 	
-	public J getClave() {
+	public final J getClave() {
 		return clave;
 	}
 
-	public K getCuerpo() {
+	public final K getCuerpo() {
 		return cuerpo;
 	}
 

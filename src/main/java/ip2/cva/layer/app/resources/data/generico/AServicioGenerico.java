@@ -13,5 +13,8 @@ public abstract class AServicioGenerico <J extends IEntidadPk, K extends IEntida
 	public AServicioGenerico(IDao<J,K,L> value) {
 		dao=value;
 	}
-	
+
+	public IDao<J, K, L> getDao() {
+		return dao;
+	}
 }
