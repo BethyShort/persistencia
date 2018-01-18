@@ -4,11 +4,11 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import ip2.cva.layer.app.resources.data.generico.AServicioGenerico;
+import ip2.cva.layer.app.resources.data.gestores.AGestorAccesoDatosGenerico;
 import ip2.cva.layer.app.resources.data.interfaces.IDao;
 
 @Service("ServicioEstudiante")
-public class ServicioEstudiante extends AServicioGenerico<EstudiantePk, EstudianteCuerpo,Estudiante,IDao<EstudiantePk, EstudianteCuerpo,Estudiante>> {
+public class ServicioEstudiante extends AGestorAccesoDatosGenerico<EstudiantePk, EstudianteCuerpo,Estudiante,IDao<EstudiantePk, EstudianteCuerpo,Estudiante>> {
 	   
 	public ServicioEstudiante(IDao<EstudiantePk,EstudianteCuerpo,Estudiante> dao) {
 		super(dao);

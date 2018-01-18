@@ -1,4 +1,4 @@
-package ip2.cva.layer.app.provider.data.jpa;
+package ip2.cva.layer.app.resources.data.dao.provider.jpa;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ import ip2.cva.layer.app.resources.data.interfaces.IEntidadCuerpo;
 import ip2.cva.layer.app.resources.data.interfaces.IEntidadPk;
 import ip2.cva.layer.app.resources.data.interfaces.IDao;
 
-public abstract class ADaoJpa <J extends IEntidadPk, K extends IEntidadCuerpo, L extends IEntidad<J,K>>  implements IDao<J,K,L> {
+public abstract class AJpaDaoGenerico <J extends IEntidadPk, K extends IEntidadCuerpo, L extends IEntidad<J,K>>  implements IDao<J,K,L> {
 
 	private Class<L> clazz;
 

@@ -1,4 +1,4 @@
-package ip2.cva.layer.app.provider.data.hibernate;
+package ip2.cva.layer.app.resources.data.dao.provider.hibernate;
 
 import java.util.List;
 
@@ -19,7 +19,7 @@ import ip2.cva.layer.app.resources.data.interfaces.IDao;
  * @param <K>
  * @param <T>
  */
-public abstract class ADaoHibernate<J extends IEntidadPk, K extends IEntidadCuerpo, L extends IEntidad<J, K>>
+public abstract class AHibernateDaoGenerico<J extends IEntidadPk, K extends IEntidadCuerpo, L extends IEntidad<J, K>>
 		implements IDao<J, K, L> {
 
 	private Class<L> clazz;

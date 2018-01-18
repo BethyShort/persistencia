@@ -1,4 +1,4 @@
-package ip2.cva.layer.app.resources.data.generico;
+package ip2.cva.layer.app.resources.data.entidades;
 
 import ip2.cva.layer.app.resources.data.interfaces.IEntidad;
 import ip2.cva.layer.app.resources.data.interfaces.IEntidadCuerpo;
