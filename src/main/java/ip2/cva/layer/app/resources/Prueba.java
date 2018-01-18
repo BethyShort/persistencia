@@ -13,6 +13,13 @@ public class Prueba {
 		EstudiantePk clave = new EstudiantePk();
 		EstudianteCuerpo cuerpo = new EstudianteCuerpo();
 		Estudiante estudiante = new Estudiante(clave, cuerpo);
+		
+		clave.setCampoPrimero("valor campo primer");
+		clave.setCampoSegundo("valor campo segundo");
+		cuerpo.setCampoPrimero("valor campo primero");
+		cuerpo.setCampoSegundo("valor campo segundo");
+
+		estudiante.getFields();
 
 		IDao<EstudiantePk, EstudianteCuerpo, Estudiante> dao = new JpaDao<EstudiantePk, EstudianteCuerpo, Estudiante>();
 		ServicioEstudiante servicioEstudiante = new ServicioEstudiante(dao);
