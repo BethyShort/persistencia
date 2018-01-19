@@ -1,11 +1,11 @@
-package ip2.cva.layer.app.resources.data;
+package es.karenina.layer.app.resources.data;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import ip2.cva.layer.app.resources.data.gestores.AGestorAccesoDatosGenerico;
-import ip2.cva.layer.app.resources.data.interfaces.IDao;
+import es.karenina.layer.app.resources.data.gestores.AGestorAccesoDatosGenerico;
+import es.karenina.layer.app.resources.data.interfaces.IDao;
 
 @Service("ServicioEstudiante")
 public class ServicioEstudiante extends AGestorAccesoDatosGenerico<EstudiantePk, EstudianteCuerpo,Estudiante,IDao<EstudiantePk, EstudianteCuerpo,Estudiante>> {

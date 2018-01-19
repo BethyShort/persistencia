@@ -1,13 +1,13 @@
-package ip2.cva.layer.app.resources.data.entidades;
+package es.karenina.layer.app.resources.data.entidades;
 
 import java.io.Serializable;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 
-import ip2.cva.layer.app.resources.data.interfaces.IEntidad;
-import ip2.cva.layer.app.resources.data.interfaces.IEntidadCuerpo;
-import ip2.cva.layer.app.resources.data.interfaces.IEntidadPk;
+import es.karenina.layer.app.resources.data.interfaces.IEntidad;
+import es.karenina.layer.app.resources.data.interfaces.IEntidadCuerpo;
+import es.karenina.layer.app.resources.data.interfaces.IEntidadPk;
 
 public abstract class AEntidadGenerica <J extends IEntidadPk, K extends IEntidadCuerpo> implements IEntidad<J,K>{
 

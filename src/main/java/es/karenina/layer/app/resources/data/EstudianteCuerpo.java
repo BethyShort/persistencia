@@ -1,16 +1,15 @@
-package ip2.cva.layer.app.resources.data;
+package es.karenina.layer.app.resources.data;
 
-import ip2.cva.layer.app.resources.data.interfaces.IEntidadPk;
+import es.karenina.layer.app.resources.data.interfaces.IEntidadCuerpo;
 
-public class EstudiantePk implements IEntidadPk {
+public class EstudianteCuerpo implements IEntidadCuerpo {
+
 	
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -9086773471340472838L;
-
+	private static final long serialVersionUID = 3745297387350501175L;
 	protected String campoPrimero;
-	
 	protected String campoSegundo;
 	
 	public String getCampoPrimero() {

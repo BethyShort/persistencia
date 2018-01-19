@@ -1,4 +1,4 @@
-package ip2.cva.layer.app.resources.data.interfaces;
+package es.karenina.layer.app.resources.data.interfaces;
 
 import java.io.Serializable;
 import java.util.Map;

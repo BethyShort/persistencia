@@ -1,4 +1,4 @@
-package ip2.cva.layer.app.resources.data.dao.provider.hibernate;
+package es.karenina.layer.app.resources.data.dao.provider.hibernate;
 
 import java.util.List;
 
@@ -6,10 +6,10 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import ip2.cva.layer.app.resources.data.interfaces.IEntidad;
-import ip2.cva.layer.app.resources.data.interfaces.IEntidadCuerpo;
-import ip2.cva.layer.app.resources.data.interfaces.IEntidadPk;
-import ip2.cva.layer.app.resources.data.interfaces.IDao;
+import es.karenina.layer.app.resources.data.interfaces.IDao;
+import es.karenina.layer.app.resources.data.interfaces.IEntidad;
+import es.karenina.layer.app.resources.data.interfaces.IEntidadCuerpo;
+import es.karenina.layer.app.resources.data.interfaces.IEntidadPk;
 
 /**
  * Se elimina la implemenación original, porque Hibernate es una implementación

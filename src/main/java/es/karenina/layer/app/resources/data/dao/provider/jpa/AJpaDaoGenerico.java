@@ -1,14 +1,14 @@
-package ip2.cva.layer.app.resources.data.dao.provider.jpa;
+package es.karenina.layer.app.resources.data.dao.provider.jpa;
 
 import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import ip2.cva.layer.app.resources.data.interfaces.IEntidad;
-import ip2.cva.layer.app.resources.data.interfaces.IEntidadCuerpo;
-import ip2.cva.layer.app.resources.data.interfaces.IEntidadPk;
-import ip2.cva.layer.app.resources.data.interfaces.IDao;
+import es.karenina.layer.app.resources.data.interfaces.IDao;
+import es.karenina.layer.app.resources.data.interfaces.IEntidad;
+import es.karenina.layer.app.resources.data.interfaces.IEntidadCuerpo;
+import es.karenina.layer.app.resources.data.interfaces.IEntidadPk;
 
 public abstract class AJpaDaoGenerico <J extends IEntidadPk, K extends IEntidadCuerpo, L extends IEntidad<J,K>>  implements IDao<J,K,L> {
 

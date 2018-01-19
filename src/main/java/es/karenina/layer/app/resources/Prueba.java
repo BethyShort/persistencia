@@ -1,11 +1,11 @@
-package ip2.cva.layer.app.resources;
+package es.karenina.layer.app.resources;
 
-import ip2.cva.layer.app.resources.data.Estudiante;
-import ip2.cva.layer.app.resources.data.EstudianteCuerpo;
-import ip2.cva.layer.app.resources.data.EstudiantePk;
-import ip2.cva.layer.app.resources.data.ServicioEstudiante;
-import ip2.cva.layer.app.resources.data.dao.provider.jpa.JpaDao;
-import ip2.cva.layer.app.resources.data.interfaces.IDao;
+import es.karenina.layer.app.resources.data.Estudiante;
+import es.karenina.layer.app.resources.data.EstudianteCuerpo;
+import es.karenina.layer.app.resources.data.EstudiantePk;
+import es.karenina.layer.app.resources.data.ServicioEstudiante;
+import es.karenina.layer.app.resources.data.dao.provider.jpa.JpaDao;
+import es.karenina.layer.app.resources.data.interfaces.IDao;
 
 public class Prueba {
 
